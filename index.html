@@ -9,148 +9,264 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="images/logo.svg" alt="The Beauty Zone logo" />
+      <nav class="header_nav">
+        <div class="container">
+          <div class="header_logo">
+            <img src="images/logo.svg" alt="The Beauty Zone logo" />
+          </div>
 
-        <ul>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#why-us">Чому ми</a></li>
-          <li><a href="#procedures">Наші процедури</a></li>
-          <li><a href="#contacts">Контакти</a></li>
-        </ul>
+          <ul class="header_list">
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#why-us">Чому ми</a></li>
+            <li><a href="#procedures">Наші процедури</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
 
-        <ul>
-          <li>
-            <a href="#">
-              <img src="images/icons/phone.svg" alt="The phone icon" />
-            </a>
-          </li>
+          <div class="header_socials">
+            <ul class="socials">
+              <li class="social">
+                <a href="#">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </a>
+              </li>
 
-          <li>
-            <a href="#">
-              <img src="images/icons/instagram.svg" alt="The Instagram icon" />
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="images/icons/facebook.svg" alt="The Facebook icon" />
-            </a>
-          </li>
-        </ul>
+              <li class="social">
+                <a href="#">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social">
+                <a href="#">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="about">
-        <p class="subtitle">Косметологічна клініка</p>
-        <h1>Beauty Zone</h1>
-        <button class="button-main" type="button">Замовити дзвінок</button>
-        <p class="text-small">
-          Запишись та отримай безкоштовну консультацію нашого косметолога
-        </p>
+      <section id="about" class="about_section">
+        <div class="container">
+          <div class="about_group">
+            <div class="about_title">
+              <p class="subtitle">Косметологічна клініка</p>
+              <h1>Beauty<br />Zone</h1>
+            </div>
+
+            <div class="about_info">
+              <button class="button_main" type="button">
+                Замовити дзвінок
+              </button>
+              <p class="about_text_small">
+                Запишись та отримай безкоштовну консультацію нашого косметолога
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="why-us">
-        <h2>Перевтілюйтесь в <span>beauty zone!</span></h2>
-        <p class="text-large">
-          Наша косметологічна клініка пропонує вам професійні послуги з догляду
-          за шкірою обличчя та тіла.
-        </p>
+      <section id="why-us" class="why_section">
+        <div class="container">
+          <div class="why_group">
+            <div class="why_info">
+              <h2 class="why_title">
+                Перевтілюйтесь в <span>beauty zone!</span>
+              </h2>
 
-        <p class="text-large">
-          B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та
-          приємний сервіс. Наші косметологічні процедури та препарати допоможуть
-          вам підтримувати свою красу та молодість. З нами краса назавжди!
-        </p>
+              <p class="why_text_large">
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
 
-        <img
-          src="images/before.jpg"
-          alt="Before the procedure in Beauty Zone"
-        />
-        <img src="images/after.jpg" alt="The result of Beauty Zone" />
+              <p class="why_text_large">
+                B <span>beauty zone</span> ми гарантуємо найвищі стандарти
+                якості та приємний сервіс. Наші косметологічні процедури та
+                препарати допоможуть вам підтримувати свою красу та молодість. З
+                нами краса назавжди!
+              </p>
+            </div>
+
+            <div class="why_images">
+              <div class="why_image">
+                <img
+                  src="images/before.jpg"
+                  alt="Before the procedure in Beauty Zone"
+                />
+              </div>
+
+              <div class="why_image">
+                <img src="images/after.jpg" alt="The result of Beauty Zone" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="advantages">
-        <h2>Чому люди <span>обирають нас</span></h2>
-        <article>
-          <p class="card-text">
-            Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5
-            років
-          </p>
-        </article>
+      <section id="advantages" сlass="advantages_section">
+        <div class="container">
+          <h2 class="advantages_title">Чому люди <span>обирають нас</span></h2>
+          <div class="advantages_cards">
+            <article class="advantages_card">
+              <svg class="icon" width="48" height="48">
+                <use href="./images/icons.svg#icon-cube"></use>
+              </svg>
 
-        <article>
-          <p class="card-text">
-            Використовуємо тільки професійне обладнання та косметику, перевірену
-            часом
-          </p>
-        </article>
-
-        <article>
-          <p class="card-text">
-            Наша мета - підкреслити переваги та приховати недоліки, а не
-            переробити
-          </p>
-        </article>
-      </section>
-
-      <section id="procedures">
-        <h2>Наші <span>процедури</span></h2>
-        <ul>
-          <li>
-            <article>
-              <img
-                src="images/procedures.jpg"
-                alt="An example of a procedure"
-              />
-              <p class="card-title">Маски для обличчя</p>
+              <p class="advantages_card_text">
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
             </article>
-          </li>
-        </ul>
+
+            <article class="advantages_card">
+              <svg class="icon" width="48" height="48">
+                <use href="./images/icons.svg#icon-medicine"></use>
+              </svg>
+
+              <p class="advantages_card_text">
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </article>
+
+            <article class="advantages_card">
+              <svg class="icon" width="48" height="48">
+                <use href="./images/icons.svg#icon-quality"></use>
+              </svg>
+
+              <p class="advantages_card_text">
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section id="contacts">
-        <h2>Як нас <span>знайти</span></h2>
-        <div></div>
+      <section id="procedures" class="procedures_section">
+        <div class="container">
+          <h2 class="procedures_title">Наші <span>процедури</span></h2>
+          <ul class="procedures_list">
+            <li>
+              <article class="procedures_card">
+                <img
+                  src="images/procedures.jpg"
+                  alt="An example of a procedure"
+                />
+                <p class="procedures_card_text">Маски<br />для обличчя</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="procedures_card">
+                <img
+                  src="images/procedure_2.jpg"
+                  alt="An example of a procedure"
+                />
+                <p class="procedures_card_text">Ін'єкції<br />для обличчя</p>
+              </article>
+            </li>
+
+            <li>
+              <article class="procedures_card">
+                <img
+                  src="images/procedure_3.jpg"
+                  alt="An example of a procedure"
+                />
+                <p class="procedures_card_text">Очищення<br />обличчя</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts_section">
+        <div class="container">
+          <h2 class="conatcts_title">Як нас <span>знайти</span></h2>
+          <div class="conatct_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2117831.802688196!2d-101.9662467726161!3d35.41041315705542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smarket%20str!5e0!3m2!1sen!2spl!4v1764890788949!5m2!1sen!2spl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <nav>
-        <img src="./images/logo.svg" alt="The Beauty Zone logo" />
+        <div class="container">
+          <div class="footer_group">
+            <div class="footer_logo">
+              <img src="./images/logo.svg" alt="The Beauty Zone logo" />
+            </div>
 
-        <ul>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#why-us">Чому ми</a></li>
-          <li><a href="#procedures">Наші процедури</a></li>
-          <li><a href="#contacts">Контакти</a></li>
-        </ul>
+            <ul class="footer_nav">
+              <li class="footer_nav_li"><a href="#about">Про нас</a></li>
+              <li class="footer_nav_li"><a href="#why-us">Чому ми</a></li>
+              <li class="footer_nav_li">
+                <a href="#procedures">Наші процедури</a>
+              </li>
+              <li class="footer_nav_li"><a href="#contacts">Контакти</a></li>
+            </ul>
 
-        <p class="footer-contact">+ 38 (096) 000 00 07</p>
-        <p class="footer-contact">beautyzone@gmail.com</p>
-        <p class="footer-address">Україна, м. Київ, вул. Тараса Шевченка 5</p>
+            <ul class="footer_nav">
+              <li class="footer_nav_li">
+                <p class="footer_contact">+ 38 (096) 000 00 07</p>
+              </li>
+              <li class="footer_nav_li">
+                <p class="footer_contact">beautyzone@gmail.com</p>
+              </li>
+              <li class="footer_nav_li">
+                <p class="footer_address">
+                  Україна, м. Київ, вул. Тараса Шевченка 5
+                </p>
+              </li>
+              <div class="footer_socials">
+                <ul class="socials">
+                  <li class="social">
+                    <a href="#">
+                      <svg class="icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-        <ul>
-          <li>
-            <a href="#">
-              <img src="images/icons/phone.svg" alt="The phone icon" />
-            </a>
-          </li>
+                  <li class="social">
+                    <a href="#">
+                      <svg class="icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
 
-          <li>
-            <a href="#">
-              <img src="images/icons/instagram.svg" alt="The Instagram icon" />
-            </a>
-          </li>
+                  <li class="social">
+                    <a href="#">
+                      <svg class="icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </ul>
 
-          <li>
-            <a href="#">
-              <img src="images/icons/facebook.svg" alt="The Facebook icon" />
-            </a>
-          </li>
-        </ul>
-
-        <p class="footer-info">Політика конфіденційності</p>
-        <p class="footer-info">© 2025 Дані захищені</p>
+            <div class="footer_copyright">
+              <p class="footer_info">Політика конфіденційності</p>
+              <p class="footer_info">© 2025 Дані захищені</p>
+            </div>
+          </div>
+        </div>
       </nav>
     </footer>
   </body>
