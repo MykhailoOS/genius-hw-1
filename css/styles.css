@@ -40,6 +40,7 @@
 
 :root {
   --background: #FFF;
+  --white: #FFF;
   --primary-color: #2B7FFF;
   --dark-blue: #011C44;
   --blue: #011F4A;
@@ -65,10 +66,11 @@
 
 /* container */
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 100%;
-  box-sizing: border-box;
+  max-width: 1288px;
+  margin: 0 auto;
 }
 
 html {
@@ -177,6 +179,7 @@ footer {
 }
 
 footer a {
+  font-size: 16px;
   color: var(--background);
   text-decoration: none;
   transition: color 0.2s;
@@ -268,7 +271,7 @@ header {
   left: 0;
   width: 100%;
   padding: 32px 0;
-  background-color: #FFF;
+  background-color: var(--white);
   z-index: 1000;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
@@ -278,6 +281,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .header_list {
@@ -324,6 +329,7 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 40px;
+  margin-left: 100px;
 }
 
 .about_title {
@@ -344,19 +350,20 @@ header {
 
 .why_section {
   flex-basis: 100%;
-  padding: 96px 0;
+  padding-top: 96px;
 }
 
 .why_group {
   display: flex;
-  align-items: center;
+  gap: 32px;
 }
 
 .why_info {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  flex-basis: 50%;
+  width: 709px;
+  margin-top: 40px;
 }
 
 .why_title {
@@ -382,6 +389,10 @@ header {
 
 .why_image img {
   border-radius: 50%;
+}
+
+.why_image_offset {
+  margin-left: 172px;
 }
 
 .why_image img[alt="star-element"],
@@ -438,7 +449,7 @@ header {
 /* Advantages */
 
 .advantages_section {
-  padding: 96px 0;
+  padding-top: 96px;
 }
 
 .advantages_title {
@@ -447,19 +458,20 @@ header {
 
 .advantages_cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
+  gap: 56px;
   margin-top: 48px;
+  justify-content: center;
 }
 
 .advantages_card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: calc((100% - 120px) / 3);
+  width: calc((100% - 156px) / 3);
+  height: 181px;
   gap: 8px;
   padding: 24px 32px;
-  background: #FFFFFF;
+  background: var(--white);
   box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
   border-radius: 32px;
 }
@@ -469,9 +481,10 @@ header {
 }
 
 .advantages_card_text {
+  color: var(--dark-blue);
   font-size: 18px;
   font-weight: 400;
-  color: var(--dark-blue);
+  line-height: 133%;
   text-align: center;
 }
 
@@ -531,7 +544,7 @@ header {
   transform: translateX(-50%);
 
   font-size: 22px;
-  color: #FFF;
+  color: var(--white);
   text-align: center;
   padding-bottom: 32px;
 
@@ -582,7 +595,7 @@ header {
 }
 
 .contacts_form_title {
-  color: #FFF;
+  color: var(--white);
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
@@ -676,7 +689,7 @@ header {
 
 .modal-title {
   margin-bottom: 40px;
-  color: #FFF;
+  color: var(--white);
   font-family: var(--play);
   text-align: center;
 }
@@ -690,7 +703,7 @@ header {
 }
 
 .modal_descr {
-  color: #FFF;
+  color: var(--white);
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
@@ -736,13 +749,13 @@ header {
 }
 
 .input_control::placeholder {
-  color: #FFF;
+  color: var(--white);
 }
 
 .input_control:focus {
   outline: none;
   background-color: var(--gray);
-  color: #FFF;
+  color: var(--white);
 }
 
 .modal form .button_main {

@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css?v=1.0" />
   </head>
   <body>
     <header>
       <nav class="header_nav">
         <div class="container">
           <div class="header_logo">
-            <img src="images/logo.svg" alt="The Beauty Zone logo" />
+            <a href="#">
+              <img src="images/logo.svg" alt="The Beauty Zone logo" />
+            </a>
           </div>
 
           <ul class="header_list">
@@ -108,14 +110,18 @@
               <div class="why_image">
                 <img src="images/star-big.svg" alt="star-big-element" />
 
-                <img src="images/after.jpg" alt="The result of Beauty Zone" />
+                <img
+                  class="why_image_offset"
+                  src="images/after.jpg"
+                  alt="The result of Beauty Zone"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="advantages" сlass="advantages_section">
+      <section id="advantages" class="advantages_section">
         <div class="container">
           <h2 class="advantages_title">Чому люди <span>обирають нас</span></h2>
           <div class="advantages_cards">
@@ -267,7 +273,9 @@
         <div class="container">
           <div class="footer_group">
             <div class="footer_logo">
-              <img src="./images/logo.svg" alt="The Beauty Zone logo" />
+              <a href="#">
+                <img src="./images/logo.svg" alt="The Beauty Zone logo" />
+              </a>
             </div>
 
             <ul class="footer_nav">
@@ -291,33 +299,35 @@
                   Україна, м. Київ, вул. Тараса Шевченка 5
                 </p>
               </li>
-              <div class="footer_socials">
-                <ul class="socials">
-                  <li class="social">
-                    <a href="#">
-                      <svg class="icon" width="32" height="32">
-                        <use href="./images/icons.svg#icon-phone"></use>
-                      </svg>
-                    </a>
-                  </li>
+              <li class="footer_nav_li">
+                <div class="footer_socials">
+                  <ul class="socials">
+                    <li class="social">
+                      <a href="#">
+                        <svg class="icon" width="32" height="32">
+                          <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social">
-                    <a href="#">
-                      <svg class="icon" width="32" height="32">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <li class="social">
+                      <a href="#">
+                        <svg class="icon" width="32" height="32">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
 
-                  <li class="social">
-                    <a href="#">
-                      <svg class="icon" width="32" height="32">
-                        <use href="./images/icons.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    <li class="social">
+                      <a href="#">
+                        <svg class="icon" width="32" height="32">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </ul>
 
             <div class="footer_copyright">
@@ -461,6 +471,6 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js?v=1.0"></script>
   </body>
 </html>
